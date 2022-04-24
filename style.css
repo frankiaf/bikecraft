@@ -11,6 +11,7 @@ body {
   padding: 0;
   max-width: 100%;
   font-family: var(--f2);
+  height: 4000px;
 }
 
 h1,
@@ -325,5 +326,158 @@ menu img {
     margin-left: 0px;
     position: absolute;
     background-color: var(--p1);
+  }
+}
+
+/************************************* Section - Tecnologia *************************************/
+
+.section-tecnologia {
+  background-color: var(--c11);
+}
+
+.tecnologia-container {
+  display: flex;
+  max-width: 1240px;
+  margin: 120px auto 0;
+  padding: 0 28px 0 28px;
+  color: var(--w);
+  justify-content: space-between;
+}
+
+.tecnologia-container picture {
+  margin: -80px 0 -80px 0;
+}
+
+.tecnologia-container img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.tecnologia-container h4 {
+  font-family: var(--f1);
+  color: var(--c5);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tecnologia-container span {
+  color: var(--p1);
+}
+
+.tecnologia-container h1 {
+  font-size: 64px;
+  line-height: 72px;
+  margin: 20px 0 32px 0;
+}
+
+.tecnologia-container p {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+  color: var(--c5);
+}
+
+.tecnologia-container a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--p1);
+  text-decoration: underline 4px;
+  text-underline-offset: 10px;
+}
+
+.tecnologia-container-texto {
+  max-width: 600px;
+  padding: 80px 40px 0 0;
+}
+
+.tecnologia-container-specs {
+  display: flex;
+  gap: 60px;
+  padding: 112px 0 90px 0;
+}
+
+.tecnologia-container-specs h2 {
+  color: var(--w);
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.tecnologia-container-specs p {
+  color: var(--c5);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.motor-eletrico h2::before {
+  content: "";
+  background-image: url(assets/eletrica.svg);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -30px;
+}
+
+.rastreador h2::before {
+  content: "";
+  background-image: url(assets/rastreador.svg);
+  margin-top: -30px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.tecnologia-bg {
+  height: 80px;
+  background-color: var(--w);
+}
+
+@media (max-width: 700px) {
+  .tecnologia-container {
+    margin: 40px auto 0;
+    flex-direction: column;
+    margin: 40px auto 0;
+  }
+  .tecnologia-container h4 {
+    font-size: 18px;
+  }
+
+  .tecnologia-container a {
+    font-size: 18px;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+  }
+
+  .tecnologia-container-texto h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .tecnologia-container p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .tecnologia-container-specs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tecnologia-container img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .tecnologia-container picture {
+    transform: rotate(-90deg);
+    margin: -200px 0 -185px 0;
+  }
+
+  .tecnologia-bg {
+    background-color: #a66f00;
+    height: 50px;
   }
 }
