@@ -348,6 +348,10 @@ menu img {
   margin: -80px 0 -80px 0;
 }
 
+.tecnologia-container picture:last-child {
+  display: none;
+}
+
 .tecnologia-container img {
   height: 100%;
   object-fit: cover;
@@ -465,19 +469,17 @@ menu img {
     flex-direction: column;
   }
 
-  .tecnologia-container img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  .tecnologia-container picture {
+    display: none;
   }
 
-  .tecnologia-container picture {
-    transform: rotate(-90deg);
-    margin: -200px 0 -185px 0;
+  .tecnologia-container picture:last-child {
+    display: block;
+    margin: -80px 0 -60px 0;
   }
 
   .tecnologia-bg {
-    background-color: #a66f00;
-    height: 50px;
+    height: 53px;
+    background-color: var(--w);
   }
 }
