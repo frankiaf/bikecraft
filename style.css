@@ -483,3 +483,123 @@ menu img {
     background-color: var(--w);
   }
 }
+
+/************************************* Section - Parceiros *************************************/
+
+.parceiros-container {
+  max-width: 1240px;
+  margin: 120px auto 0;
+  padding: 0 28px 0 28px;
+}
+
+.parceiros-container h1 {
+  font-size: 64px;
+  padding-bottom: 40px;
+  color: var(--c11);
+}
+
+.parceiros-container span {
+  color: var(--p1);
+}
+
+.parceiros-logos picture {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--c2);
+  border-bottom: 2px solid var(--c2);
+}
+
+.parceiros-logos img {
+  margin: auto;
+}
+
+.parceiros-logos {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+}
+
+.parceiros-logos picture:first-child,
+.parceiros-logos picture:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros-logos picture:nth-child(n + 5) {
+  border-bottom: none;
+}
+
+@media (max-width: 1310px) {
+  .parceiros-logos picture:first-child,
+  .parceiros-logos picture:nth-child(5) {
+    border-left: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:nth-child(n + 5) {
+    border-bottom: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:first-child,
+  .parceiros-logos picture:nth-child(4),
+  .parceiros-logos picture:nth-child(7) {
+    border-left: none;
+  }
+
+  .parceiros-logos picture:nth-child(7),
+  .parceiros-logos picture:nth-child(8) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 1003px) {
+  .parceiros-logos picture:first-child,
+  .parceiros-logos picture:nth-child(4),
+  .parceiros-logos picture:nth-child(7) {
+    border-left: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:nth-child(7),
+  .parceiros-logos picture:nth-child(8) {
+    border-bottom: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:nth-child(odd) {
+    border-left: none;
+  }
+
+  .parceiros-logos picture:nth-child(7),
+  .parceiros-logos picture:nth-child(8) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 685px) {
+  .parceiros-logos picture:nth-child(odd) {
+    border-left: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:nth-child(7),
+  .parceiros-logos picture:nth-child(8) {
+    border-bottom: 2px solid var(--c2);
+  }
+
+  .parceiros-logos picture:nth-child(n + 1) {
+    border-left: none;
+  }
+  .parceiros-logos picture:last-child {
+    border-bottom: none;
+  }
+
+  .parceiros-container h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: var(--c11);
+  }
+
+  .parceiros-logos {
+    padding-top: 0px;
+  }
+
+  .parceiros-container {
+    margin: 50px auto 0;
+  }
+}
