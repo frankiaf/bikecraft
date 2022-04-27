@@ -9,7 +9,7 @@ Projeto de uma página para loja de bicicletas criado para o curso de HTML , CSS
 - [x] Section - Bicicletas
 - [x] Section - Tecnologia
 - [x] Section - Parceiros
-- [ ] Section - Depoimentos
+- [x] Section - Depoimentos
 - [ ] Section - Seguros
 - [ ] Footer
 
