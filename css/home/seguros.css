@@ -1,0 +1,159 @@
+/************************************* Section - Seguros *************************************/
+
+.section-seguros {
+  background-color: var(--c11);
+  max-width: 100%;
+}
+
+.seguros-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 70px 35px 100px 35px;
+}
+
+.container-prata-ouro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.seguros-container h1 {
+  font-size: 64px;
+  padding-bottom: 40px;
+  color: var(--w);
+}
+
+.seguros-container span {
+  color: var(--p1);
+}
+
+.seguros-container ul {
+  padding: 0;
+}
+
+.seguros-box {
+  color: white;
+  background-color: var(--c12);
+  display: flex;
+  border-radius: 5px;
+  gap: 140px;
+  padding: 40px 40px 40px 70px;
+}
+
+.seguros-box h2 {
+  color: var(--c5);
+  font-size: 36px;
+}
+
+.seguros-box li {
+  color: var(--w);
+  line-height: 55px;
+  font-size: 18px;
+  font-family: var(--f1);
+  position: relative;
+}
+.seguros-box li::before {
+  content: "";
+  background-image: url(../../assets/lista.svg);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.seguros-box a {
+  color: var(--c4);
+  margin-top: 20px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--c10);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+}
+
+.seguros-container-direita p {
+  font-size: 12px;
+  text-align: right;
+  margin-top: -10px;
+  color: var(--c6);
+}
+
+.seguros-container-direita h2 {
+  color: var(--w);
+}
+
+.texto-ouro h2 {
+  color: var(--p1);
+  font-size: 36px;
+}
+
+.texto-ouro a {
+  color: var(--p5);
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+}
+
+.texto-ouro a:hover {
+  background: linear-gradient(180deg, #ffbf00 0%, #d28c00 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 690px) {
+  .seguros-box {
+    gap: 10px;
+  }
+
+  .seguros-container h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .seguros-box {
+    padding: 25px 25px 25px 50px;
+  }
+
+  .seguros-box {
+    margin: 0 auto;
+    gap: 0px;
+  }
+
+  .seguros-box h2 {
+    color: var(--c5);
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .seguros-box li {
+    color: var(--w);
+    line-height: 35px;
+    font-size: 13px;
+    font-family: var(--f1);
+    position: relative;
+  }
+
+  .seguros-container-direita p {
+    text-align: left;
+    margin-top: -2px;
+  }
+
+  .seguros-box li::before {
+    background-size: 10px;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+  }
+
+  .seguros-box a {
+    font-size: 15px;
+    padding: 14px 0px 14px 0;
+  }
+}
