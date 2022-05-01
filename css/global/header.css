@@ -1,71 +1,72 @@
 /************************************* Header *************************************/
 
 header {
-    background-color: var(--c12);
-    height: 96px;
-    padding: 0 28px 0 28px;
-  }
-  
-  header a {
-    color: var(--c1);
-    font-size: 18px;
+  background-color: var(--c12);
+  height: 96px;
+  padding: 0 28px 0 28px;
+}
+
+menu a {
+  color: var(--c1);
+  font-size: 18px;
+  display: block;
+  position: relative;
+}
+
+menu a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  display: block;
+  border-radius: 50px;
+  background: var(--w);
+}
+
+
+menu a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+  position: absolute;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.header-menu {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  align-items: center;
+}
+
+menu img {
+  display: none;
+}
+
+/* Responsivo 1200px */
+
+@media (max-width: 1200px) {
+  menu img {
+    padding-top: 40px;
     display: block;
-    position: relative;
-  }
-  
-  header a::after {
-    content: " ";
-    width: 0;
-    height: 2px;
-    display: block;
-    border-radius: 50px;
-    background: var(--w);
-  }
-  
-  header a:hover::after {
-    width: 100%;
-    transition: 0.3s;
-    position: absolute;
-  }
-  
-  header ul {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+    margin-left: auto;
     cursor: pointer;
   }
-  
-  .header-menu {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    height: 96px;
-    align-items: center;
-  }
-  
-  menu img {
+  .header-menu li {
     display: none;
   }
-  
-  /* Responsivo 1200px */
-  
-  @media (max-width: 1200px) {
-    menu img {
-      padding-top: 40px;
-      display: block;
-      margin-left: auto;
-      cursor: pointer;
-    }
-    .header-menu li {
-      display: none;
-    }
+}
+
+/* Responsivo 700px */
+
+@media (max-width: 700px) {
+  .header-menu li {
+    display: none;
   }
-  
-  /* Responsivo 700px */
-  
-  @media (max-width: 700px) {
-    .header-menu li {
-      display: none;
-    }
-  }
+}
