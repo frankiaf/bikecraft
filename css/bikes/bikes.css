@@ -135,7 +135,6 @@
   color: var(--c5);
 }
 
-
 .bikes-botao {
   margin-top: 20px;
   padding: 16px 32px 16px 32px;
@@ -152,12 +151,26 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
 }
 
 .bikes-botao:hover {
   background: linear-gradient(180deg, #ffbf00 0%, #d28c00 100%);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.container-img{
+  position: relative;
+
+}
+.bikes-modelos span {
+  background-color: var(--c11);
+  color: var(--w);
+  position: absolute;
+  padding: 10px 15px ;
+  border-radius: 5px 0 0 5px;
+  right: 0;
+  top: 20px;
+  font-family: var(--f1);
+  font-size: 18px;
 }
 
 /* Responsivo 1000px */
@@ -204,6 +217,12 @@
 @media (max-width: 490px) {
   .magic-container {
     top: 1130px;
-    height: 850px;
+    height: 920px;
+  }
+
+  .bikes-botao {
+    padding: 16px 8px 16px 8px;
+    position: relative;
+
   }
 }
