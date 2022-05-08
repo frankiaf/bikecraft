@@ -1,0 +1,183 @@
+.bikes {
+  max-width: 100%;
+  height: 282px;
+  background-color: var(--c11);
+}
+
+.bikes-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 28px 0 28px;
+  padding-top: 70px;
+}
+
+.bikes-container h1 {
+  font-size: 64px;
+  color: var(--w);
+}
+
+.bikes-container span {
+  font-size: 24px;
+  color: var(--c5);
+}
+
+.bikes-container span:last-child {
+  color: var(--p1);
+  font-size: 64px;
+}
+
+.bikes-modelos {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 70px 28px 70px 28px;
+  display: flex;
+  gap: 40px;
+}
+
+.bikes-modelos ul {
+  padding: 0;
+}
+
+.bikes-modelos li {
+  padding-top: 25px;
+  color: var(--c8);
+}
+
+.bikes-modelos img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bikes-modelos h2 {
+  font-size: 36px;
+  position: relative;
+}
+
+.bikes-modelos h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+}
+
+.bikes-modelos p {
+  font-size: 18px;
+  color: var(--c8);
+}
+.bikes-texto {
+  max-width: 560px;
+}
+
+.magic-container {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to right, rgb(255, 255, 255) 30%, var(--c11) 0);
+  z-index: -1;
+}
+
+.bikes-texto li:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../assets/eletrica_1.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+  transform: translateY(5px);
+}
+
+.bikes-texto li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../assets/carbono.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+  transform: translateY(5px);
+}
+
+.bikes-texto li:nth-child(3)::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../assets/velocidade.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+  transform: translateY(5px);
+}
+
+.bikes-texto li:nth-child(4)::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../assets/rastreador_1.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+  transform: translateY(5px);
+}
+
+.magic-texto h2 {
+  color: var(--w);
+}
+
+.magic-texto p {
+  color: var(--c5);
+}
+
+.magic-texto li {
+  color: var(--c5);
+}
+
+/* Responsivo 1000px */
+
+@media (max-width: 1000px) {
+  .magic-modelos {
+    margin-top: -80px;
+  }
+
+  .bikes-modelos {
+    flex-direction: column;
+  }
+
+  .magic-container {
+    height: 780px;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255) 20%,
+      var(--c11) 0
+    );
+  }
+}
+
+/* Responsivo 720px */
+
+@media (max-width: 720px) {
+  .bikes-container span {
+    font-size: 16px;
+  }
+
+  .bikes-container h1 {
+    font-size: 44px;
+    line-height: 48px;
+    color: var(--w);
+  }
+
+  .bikes-container span:last-child {
+    font-size: 44px;
+  }
+}
+
+/* Responsivo 500px */
+
+@media (max-width: 490px) {
+  .magic-container {
+    top: 1130px;
+    height: 850px;
+  }
+}
