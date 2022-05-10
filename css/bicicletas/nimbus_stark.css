@@ -196,6 +196,37 @@
   padding-bottom: 50px;
 }
 
+.bicicletas-seguros-bg{
+  background-color: var(--c11);
+  }
+
+.bicicletas-seguros-container{
+  display: flex;
+  max-width: 1240px;
+  margin: 120px auto 0;
+  padding: 0 28px 0 28px;
+  color: var(--w);
+  justify-content: space-between;
+}
+
+.bicicletas-seguros-container picture{
+  margin: -80px 0 -80px 0;
+}
+
+.bicicletas-seguros-container img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+
+.teste {
+  background-color: #ffbf00;
+  height: 800px;
+}
+
 @media (max-width: 870px) {
   .nimbus-bicicletas-info {
     display: grid;
