@@ -102,8 +102,13 @@
   }
 }
 
-@media (max-width: 380px) {
-  .bicicletas-modelos h2::before {
-    margin-top: -55px;
+@media (max-width: 480px) {
+  .section-bicicletas h2 {
+    font-size: 10px;
+  }
+
+  .section-bicicletas p {
+    font-size: 12px;
+    padding: 0;
   }
 }

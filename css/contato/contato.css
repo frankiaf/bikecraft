@@ -1,0 +1,340 @@
+.contato-bg {
+  background-color: var(--c11);
+  max-width: 100%;
+  height: 300px;
+}
+
+.contato-bg-bottom {
+  height: 200px;
+  background-color: var(--c1);
+}
+
+.contato-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 28px 0 28px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.contato-info {
+  background-color: var(--c12);
+  padding: 60px 60px 60px 90px;
+}
+
+.contato-info h3 {
+  font-size: 16px;
+  color: var(--w);
+}
+
+.contato-endereco {
+  font-size: 16px;
+  color: var(--c4);
+  padding-top: 60px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.contato-endereco::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url(../../assets/local.svg);
+  position: absolute;
+  left: -30px;
+}
+
+.contato-email a {
+  display: block;
+}
+
+.contato-email {
+  position: relative;
+}
+
+.contato-email::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url(../../assets/email.svg);
+  position: absolute;
+  top: 4px;
+  left: -30px;
+}
+
+.contato-email a {
+  font-size: 16px;
+  color: var(--c4);
+  font-style: normal;
+}
+
+.contato-social a {
+  padding-right: 20px;
+}
+
+.contato-telefone a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 16px;
+  color: var(--c4);
+}
+
+.contato-telefone {
+  position: relative;
+}
+
+.contato-telefone::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url(../../assets/telefone.svg);
+  position: absolute;
+  top: 35px;
+  left: -30px;
+}
+
+.contato-formulario {
+  padding: 60px;
+  background-color: var(--w);
+}
+
+.contato-bnt {
+  margin-top: 30px;
+  padding: 16px 32px 16px 32px;
+  color: var(--p5);
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contato-bnt:hover {
+  background: linear-gradient(180deg, #ffbf00 0%, #d28c00 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.form label {
+  display: block;
+}
+
+.form input[type="email"],
+input[type="text"],
+textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: var(--f2);
+  background-color: var(--c1);
+  border: solid 1px var(--c2);
+  box-sizing: border-box;
+}
+
+.form input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: var(--w);
+  border-color: var(--p1);
+  box-shadow: 0 0 0 2px rgba(255, 200, 1, 0.349);
+}
+
+.mapa-bg {
+  height: 800px;
+  background-color: var(--c1);
+}
+
+.mapa-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 28px 0 28px;
+}
+
+.mapa-container h1 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 64px;
+  color: var(--c11);
+}
+
+.mapa-container span {
+  color: var(--p1);
+}
+
+.mapa-cidades {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.mapa-cidade-bg {
+  height: 500px;
+  background-color: var(--w);
+}
+
+.mapa-cidade-bg h2 {
+  font-size: 32px;
+  padding-left: 80px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.mapa-cidade-bg h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  top: 40px;
+  left: 55px;
+}
+
+.mapa-cidade-bg h3 {
+  font-size: 14px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.mapa-cidade-bg h3::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  background-image: url(../../assets/relogio.svg);
+  position: absolute;
+  left: 55px;
+}
+
+.mapa-adres-info {
+  display: flex;
+  gap: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 80px;
+}
+
+.border-mapa a {
+  color: var(--c8);
+  display: block;
+}
+
+.border-mapa {
+  border-left: solid 2px var(--c2);
+  padding: 0 15px;
+  color: var(--c8);
+}
+
+@media (max-width: 1050px) {
+  .mapa-adres-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contato-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contato-bg-bottom {
+    height: 730px;
+  }
+
+  .form-telefone,
+  .form-nome {
+    grid-column: span 2;
+  }
+
+  .mapa-cidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    gap: 30px;
+  }
+
+  .mapa-cidade-bg {
+    height: 600px;
+    width: fit-content;
+  }
+
+  .mapa-bg {
+    height: 1450px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contato-info {
+    padding: 60px 20px 60px 60px;
+  }
+
+  .contato-formulario {
+    padding: 20px;
+  }
+
+  .contato-bg-bottom {
+    height: 700px;
+  }
+
+  .contato-bnt {
+    font-size: 14px;
+  }
+  .mapa-container h1 {
+    padding-top: 0px;
+    font-size: 44px;
+  }
+
+  .mapa-cidade-bg {
+    height: 450px;
+    width: fit-content;
+  }
+
+  .mapa-bg {
+    height: 1100px;
+  }
+
+  .mapa-cidade-bg h2 {
+    font-size: 25px;
+    padding-left: 60px;
+  }
+
+  .mapa-cidade-bg h2::before {
+    top: 35px;
+    left: 35px;
+  }
+
+  .mapa-cidade-bg h3 {
+    padding-left: 60px;
+  }
+
+  .mapa-cidade-bg h3::before {
+    left: 35px;
+  }
+
+  .mapa-adres-info {
+    display: flex;
+    gap: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+  }
+}
