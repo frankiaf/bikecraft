@@ -108,7 +108,6 @@
 
 .bikes-features {
   padding: 32px;
-  
 }
 
 .bikes-features p {
@@ -220,9 +219,51 @@
   border-radius: 5px;
 }
 
-.teste {
-  background-color: #ffbf00;
-  height: 800px;
+.bicicletas-seguros-texto {
+  align-self: center;
+  padding: 40px;
+  max-width: 550px;
+}
+
+.bicicletas-seguros-texto h1 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.bicicletas-seguros-texto h1 span {
+  color: var(--p1);
+}
+
+.bicicletas-seguros-texto p {
+  padding-top: 32px;
+  font-family: var(--f1);
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.bicicletas-seguros-texto a {
+  margin-top: 20px;
+  padding: 16px 32px 16px 32px;
+  color: var(--p5);
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+}
+
+.bicicletas-seguros-texto a:hover {
+  background: linear-gradient(180deg, #ffbf00 0%, #d28c00 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.seguros-bg-footer {
+  height: 80px;
+  background-color: var(--c12);
 }
 
 @media (max-width: 870px) {
@@ -231,13 +272,30 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .bicicletas-seguros-container {
+    flex-direction: column;
+  }
+
+  .bicicletas-seguros-container picture {
+    margin: -80px 0 0px 0;
+  }
+
+  .seguros-bg-footer {
+    display: none;
+  }
+  
+
+
 }
 
 @media (max-width: 520px) {
   .bikes-bg-container h1 {
     font-size: 50px;
     line-height: 50px;
-    color: var(--c12);
+    color: var(--w);
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .bicicletas-display {
     flex-direction: column;
@@ -250,5 +308,15 @@
 
   .container-comprar-agora {
     grid-template-columns: 1fr;
+  }
+
+  .bicicletas-seguros-texto h1 {
+    font-size: 35px;
+    line-height:45px;
+  }
+
+  .bicicletas-seguros-texto p {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
