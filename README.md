@@ -16,5 +16,5 @@ Projeto de uma página para loja de bicicletas criado para o curso de HTML , CSS
 ##### Páginas
 
 - [x] Bicicletas
-- [ ] Seguros
-- [ ] Contato
+- [x] Seguros
+- [x] Contato
