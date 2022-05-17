@@ -1,0 +1,27 @@
+.orcamento-bg {
+    background-color: var(--c11);
+    height: 300px;
+
+}
+.orcamento-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 28px 0 28px;
+    display: flex;
+    height: 800px;
+}
+
+.orcamento-container-preto {
+    background-color: rgb(139, 139, 139);
+    width: 100%;
+}
+
+.orcamento-container-branco{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.orcamento-bg-footer{
+    background-color: var(--c1);
+    height: 600px;
+}
