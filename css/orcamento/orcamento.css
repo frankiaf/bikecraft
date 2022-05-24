@@ -6,103 +6,142 @@
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 28px 0 28px;
-  display: grid;
-  grid-template-columns: max-content 2fr;
   height: 800px;
 }
 
-.orcamento-container-preto {
-  background-color: rgb(139, 139, 139);
-  width: 100%;
-  padding: 60px;
-}
-
-.orcamento-container-preto {
-  box-sizing: border-box;
-}
-
-.orcamento-container-preto h2 {
-  font-size: 12px;
-}
-
-.orcamento-container-branco {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-}
-
-.orcamento-bg-footer {
+.orcamento-bg-bottom {
   background-color: var(--c1);
-  height: 600px;
+  height: 500px;
 }
 
-.form-btn-bikecraft,
-.form-btn-seguro {
-  margin: 20px 10px 20px 0;
+.orcamento-areas {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.orcamento-areas h2 {
   font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
-  background-color: var(--c7);
-  width: 160px;
-  height: 48px;
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px;
-  cursor: pointer;
-  color: var(--w);
+  font-weight: 500;
+  color: var(--c5);
+}
+/* ***************************************************** */
+
+.orcamento-produto {
+  padding: 50px;
+  background-color: var(--c12);
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.form-btn-nimbus {
-    color: var(--w);
-  /* margin: 20px 10px 20px 0; */
-  font-size: 16px;
-  font-weight: 600;
-  background-color: var(--c7);
-  display: block;
-  height: 48px;
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.display-magic{
-    display: none;
-}
-
-.display-nimbus img {
-    width: 200px;
-  } 
-.display-nimbus {
-    padding: 15px;
+.orcamento-seguro,
+.orcamento-modelo {
   display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  gap: 20px;
 }
 
-
-#bikecraft:checked ~ .form-btn-bikecraft,
-#seguro:checked ~ .form-btn-seguro {
-  background-color: var(--w);
-  color: var(--c11);
+.orcamento-produto > *,
+.orcamento-seguro > *,
+.orcamento-modelo > * {
+  grid-column: 1/-1;
 }
 
-#nimbus:checked  ~ .display-nimbus {
-    display: flex;
-    background-color: var(--w);
-  color: var(--c11);
-
+.orcamento-produto > label,
+.orcamento-seguro > label {
+  grid-column: initial;
 }
 
-#magic:checked  ~ .display-magic {
-    display: flex;
-    background-color: var(--w);
-  color: var(--c11);
-
-}
-
-.orcamento-container-preto input {
+.orcamento-produto input {
   opacity: 0;
   position: absolute;
-
+  pointer-events: none;
 }
 
+.orcamento-produto label {
+  padding: 12px 16px;
+  border-radius: 5px;
+  background-color: var(--c10);
+  color: var(--c4);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+.orcamento-produto label:hover {
+  background-color: var(--c9);
+}
+
+#bikecraft:checked + label,
+#seguro:checked + label,
+#prata:checked + label,
+#gold:checked + label,
+#nimbus:checked + label,
+#magic:checked + label,
+#nebula:checked + label {
+  color: var(--c11);
+  background-color: var(--w);
+}
+
+.orcamento-formulario {
+  background-color: var(--w);
+}
+
+#seguro:checked ~ .orcamento-seguro,
+#bikecraft:checked ~ .orcamento-modelo {
+  display: grid;
+}
+
+#nimbus:checked + label + .orcamento-modelos,
+#nebula:checked + label + .orcamento-modelos,
+#magic:checked + label + .orcamento-modelos {
+  display: flex;
+}
+
+.orcamento-modelos ul,
+li {
+  padding: 0;
+  color: var(--c8);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  margin: 0;
+}
+
+.orcamento-modelos h3 {
+  color: var(--c11);
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.orcamento-img {
+  text-align: right;
+}
+
+.orcamento-modelos img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.orcamento-modelos {
+  padding: 20px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--w);
+  border-radius: 5px;
+}
+
+.orcamento-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-self: center;
+  gap: 10px;
+}
+
+.orcamento-specs img {
+  display: inline;
+  width: 16px;
+}
