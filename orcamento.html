@@ -34,50 +34,107 @@
             </div>
         </div>
     </main>
-    <article class="orcamento-bg">
+    <div class="orcamento-bg">
         <div class="orcamento-container">
-            <div class="orcamento-container-preto">
-                <form action="index.html">
-                    <h2>BIKECRAFT OU SEGURO</h2>
-                    <input type="radio" name="bikecraft" id="bikecraft" checked>
-                    <label for="bikecraft" class="form-btn-bikecraft">Bikecraft</label>
-                    <input type="radio" name="bikecraft" id="seguro">
-                    <label for="seguro" class="form-btn-seguro">Seguro</label>
-                    <h2>ESCOLHA A SUA:</h2>
-                    <label for="nimbus" class="form-btn-nimbus">Nimbus Stark</label>
-                    <input type="radio" name="nimbus" id="nimbus">
-                    <div class="display-nimbus">
-                        <div>
-                            <ul>
-                                <li>Motor Elétrico</li>
-                                <li>Fibra de Carbono</li>
-                                <li>40 km/h</li>
-                                <li>Rastreador</li>
-                            </ul>
-                        </div>
-                        <picture><img src="assets/nimbus_bicicleta.jpg"></picture>
+            <form action="index.html" class="orcamento-areas">
+                <div class="orcamento-produto">
+                    <h2>BIKECRAFT OU SEGURO?</h2>
+                    <input type="radio" name="tipo" value="bikecraft" id="bikecraft">
+                    <label for="bikecraft">Bikecraft</label>
+
+                    <input type="radio" name="tipo" value="seguro" id="seguro">
+                    <label for="seguro">Seguro</label>
+
+                    <!-- ***************** Seguro ******************** -->
+                    <div class="orcamento-seguro">
+                        <h2>ESCOLHA O SEU:</h2>
+                        <input type="radio" name="seguro" value="prata" id="prata">
+                        <label for="prata">Prata</label>
+                        <input type="radio" name="seguro" value="gold" id="gold">
+                        <label for="gold">Gold</label>
                     </div>
-                    <label for="nimbus" class="form-btn-nimbus">Magica Might </label>
-                    <input type="radio" name="nimbus" id="magic">
-                    <div class="display-magic">
-                        <div>
-                            <ul>
-                                <li>Motor Elétrico</li>
-                                <li>Fibra de Carbono</li>
-                                <li>40 km/h</li>
-                                <li>Rastreador</li>
-                            </ul>
+
+                    <!-- ***************** Modelo de Bicicleta ******************** -->
+                    <div class="orcamento-modelo">
+                        <h2>ESCOLHA A SUA:</h2>
+                        <input type="radio" name="modelo" value="nimbus" id="nimbus">
+                        <label for="nimbus">Nimbus Stark</label>
+                        <div class="orcamento-modelos">
+                            <div>
+                                <h3>Nimbus Stark</h3>
+                                <ul class="orcamento-specs">
+                                    <li><img src="assets/eletrica.svg"></li>
+                                    <li>Motor Elétrico</li>
+                                    <li><img src="assets/carbono.svg"></li>
+                                    <li>Fibra de Carbono</li>
+                                    <li><img src="assets/velocidade.svg"></li>
+                                    <li>40 km/h</li>
+                                    <li><img src="assets/rastreador.svg"></li>
+                                    <li>Rastreador</li>
+                                </ul>
+                            </div>
+                            <div class="orcamento-img">
+                                <h3>R$ 4999</h3>
+                                <img src="assets/nimbus_bicicleta.jpg" alt="">
+                            </div>
                         </div>
-                        <picture ><img src="assets/nimbus_bicicleta.jpg"></picture>
+
+                        <input type="radio" name="modelo" value="nebula" id="nebula">
+                        <label for="nebula">Nebula Cosmic</label>
+                        <div class="orcamento-modelos">
+                            <div>
+                                <h3>Nebula Cosmic</h3>
+                                <ul class="orcamento-specs">
+                                    <li><img src="assets/eletrica.svg"></li>
+                                    <li>Motor Elétrico</li>
+                                    <li><img src="assets/carbono.svg"></li>
+                                    <li>Fibra de Carbono</li>
+                                    <li><img src="assets/velocidade.svg"></li>
+                                    <li>40 km/h</li>
+                                    <li><img src="assets/rastreador.svg"></li>
+                                    <li>Rastreador</li>
+                                </ul>
+                            </div>
+                            <div class="orcamento-img">
+                                <h3>R$ 3999</h3>
+                                <img src="assets/nebula_stark.jpg">
+                            </div>
+                        </div>
+                        <input type="radio" name="modelo" value="magic" id="magic">
+                        <label for="magic">Magic Might</label>
+                        <div class="orcamento-modelos">
+                            <div>
+                                <h3>Magic Might</h3>
+                                <ul class="orcamento-specs">
+                                    <li><img src="assets/eletrica.svg"></li>
+                                    <li>Motor Elétrico</li>
+                                    <li><img src="assets/carbono.svg"></li>
+                                    <li>Fibra de Carbono</li>
+                                    <li><img src="assets/velocidade.svg"></li>
+                                    <li>40 km/h</li>
+                                    <li><img src="assets/rastreador.svg"></li>
+                                    <li>Rastreador</li>
+                                </ul>
+                            </div>
+                            <div class="orcamento-img">
+                                <h3>R$ 2499</h3>
+                                <img src="assets/magic_stark.jpg">
+                            </div>
+                        </div>
                     </div>
 
 
-                </form>
-            </div>
-            <div class="orcamento-container-branco">2</div>
+                </div>
+                <div class="orcamento-formulario">
+                </div>
+
+            </form>
+
         </div>
-    </article>
-    <div class="orcamento-bg-footer"></div>
+    </div>
+    <div class="orcamento-bg-bottom"></div>
+
+
 
 
 
